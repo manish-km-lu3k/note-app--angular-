@@ -1,1 +1,1 @@
-# note-app--angular-
+# Simple note-app-with-angular-
