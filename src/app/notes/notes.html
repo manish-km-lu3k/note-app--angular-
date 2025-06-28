@@ -1,0 +1,13 @@
+<h1 id="t">Simple Note App</h1>
+<div class="container">
+  <input type="text" [(ngModel)]="noteText" placeholder="Your note..." />
+  <button (click)="addNote()">Add Note</button>
+</div>
+<div id="u">
+  <ul class="note-list">
+    <li *ngFor="let note of notes; index as i">
+      {{ note }}
+      <button (click)="deleteNote(i)">Delete</button>
+    </li>
+  </ul>
+</div>
